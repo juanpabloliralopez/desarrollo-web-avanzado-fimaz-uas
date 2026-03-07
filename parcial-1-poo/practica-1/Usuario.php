@@ -8,7 +8,7 @@ class Usuario{
         $this->nombre = $nombre;
         $this->correo = $correo;
     }
-}
+
 
 public function getNombre() {
         return $this->nombre;
@@ -24,5 +24,6 @@ public function setNombre($nombre) {
 
 public function setCorreo($correo) {
     $this->correo = $correo;
+}
 }
 ?>
