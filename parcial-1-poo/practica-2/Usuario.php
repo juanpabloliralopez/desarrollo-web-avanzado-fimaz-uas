@@ -1,11 +1,11 @@
 <?php
 
-//Clase Usuario - Práctica 1 - Lira Lopez //
+//Clase Usuario - Práctica 2 - Lira Lopez //
 
 class Usuario {
-    // Atributos privados para aplicar el  encapsulamiento
-    private $nombre;
-    private $correo;
+    // cambie los atributos privados a protected para que admin pueda usarlos
+    protected $nombre;
+    protected $correo;
 
     // Aqui aplique el metodo constructor para inicializar los datos del usuario
     public function __construct($nombre, $correo) {
