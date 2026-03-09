@@ -1,19 +1,18 @@
 <?php
-// Importamos las clases (Asegúrate de que la carpeta 'clases' tenga los archivos)
+// Importamos las clases
 require_once 'clases/Admin.php';
 require_once 'clases/Alumno.php';
 require_once 'clases/Invitado.php';
 
-$usuarios = []; // Aquí guardaremos a los usuarios que sí se creen bien
+$usuarios = []; // Aquí guardaremos a los usuarios 
 $error = "";    // Aquí guardaremos el mensaje si falla el correo
 
 try {
-    // Creamos los objetos que pide la práctica
+    // Creamos los objetos que se piden 
     $usuarios[] = new Admin("Juan Pablo Lira", "juan.lira777@uas.edu.mx");
     $usuarios[] = new Alumno("Diego Garcia", "diego@brainrot.uas.mx", "20241001");
     $usuarios[] = new Invitado("Thalia", "thalia2345@amoralamexicana.com", "AMAZON");
 
-    // Esto hará que el código salte directo al catch
     $usuarios[] = new Alumno("Pedro", "correo_pedro", "001000");
 
 } catch (Exception $e) {
