@@ -17,7 +17,7 @@ try {
     $usuarioError = new Usuario("Pepe", "correo-mal-formado");
 
 } catch (Exception $e) {
-    // Capturamos el error y mostramos el mensaje
+    // Capturamos el error y mostramos el mensaje controlado
     echo "<p style='color: red; font-weight: bold;'>Capturamos un error: " . $e->getMessage() . "</p>";
 }
 ?>
